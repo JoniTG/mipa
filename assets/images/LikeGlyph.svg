@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="81px" viewBox="0 0 78 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#86BAED" offset="0%"></stop>
+            <stop stop-color="#4E84D7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="43.5740802%" y2="209.072899%" id="linearGradient-2">
+            <stop stop-color="#FF9A00" offset="0%"></stop>
+            <stop stop-color="#FF6800" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-3" x="0.158636963" y="22.5922126" width="13.0097319" height="29" rx="2"></rect>
+        <filter x="-30.7%" y="-13.8%" width="161.5%" height="127.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.133831522 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="151.323489%" y1="107.749409%" x2="-57.7494093%" y2="101.323489%" id="linearGradient-5">
+            <stop stop-color="#FF9A00" offset="0%"></stop>
+            <stop stop-color="#FF6800" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main-screen-–-ride-approved!" transform="translate(-155.000000, -123.000000)">
+            <g id="pop-up" transform="translate(21.000000, 90.000000)">
+                <g id="Group-6" transform="translate(133.000000, 31.000000)">
+                    <g id="Group-3" transform="translate(32.850873, 51.852576) rotate(-8.000000) translate(-32.850873, -51.852576) translate(3.350873, 25.852576)">
+                        <path d="M4.98681641,48.4033203 L4.98681641,28.6435547 L13.2697754,28.6435547 L19.8232422,19.2629395 C24.8966471,7.78629557 27.5300293,1.79012044 27.7233887,1.27441406 C28.9821777,0.646362305 33.8124947,-1.56057952 35.0866646,6.08273102 C35.5091907,8.12342113 34.5602974,12.5378905 32.2399849,19.3261392 L53.3320312,19.2629395 C56.8691406,19.7186686 58.6376953,21.6104329 58.6376953,24.9382324 C58.5339355,26.7128906 57.7285156,28.2502441 56.6931152,28.6435547 C55.6577148,29.0368652 59.8925781,32.4008789 55.0275879,36.1137695 C55.9038086,37.8781738 55.9038086,43.1044922 52.0012207,43.4882812 C53.1218262,47.1291504 50.5866699,50.9431152 47.4785156,50.9431152 C44.3703613,50.9431152 34.5859252,51.5348033 24.6867676,50.9431152 C18.0873292,50.5486565 11.5206788,49.7020582 4.98681641,48.4033203 Z" id="Path-4" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                        <g id="Rectangle-10">
+                            <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <rect stroke="#FFFFFF" stroke-width="2" x="-0.841363037" y="21.5922126" width="15.0097319" height="31" rx="2"></rect>
+                        </g>
+                    </g>
+                    <circle id="Oval-2" fill="url(#linearGradient-2)" cx="60" cy="24" r="5"></circle>
+                    <circle id="Oval-2-Copy" fill="url(#linearGradient-2)" cx="11" cy="32" r="3"></circle>
+                    <circle id="Oval-2-Copy-2" fill="url(#linearGradient-2)" cx="76" cy="44" r="3"></circle>
+                    <path d="M30.0621778,11.0621778 L30.0621778,16.5621778 L27.0621778,16.5621778 L27.0621778,11.0621778 L21.5621778,11.0621778 L21.5621778,8.06217783 L27.0621778,8.06217783 L27.0621778,2.56217783 L30.0621778,2.56217783 L30.0621778,8.06217783 L35.5621778,8.06217783 L35.5621778,11.0621778 L30.0621778,11.0621778 Z" id="Combined-Shape" fill="url(#linearGradient-5)" transform="translate(28.562178, 9.562178) rotate(-330.000000) translate(-28.562178, -9.562178) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

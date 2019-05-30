@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="43px" viewBox="0 0 50 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#86BAED" offset="0%"></stop>
+            <stop stop-color="#4E84D7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="43.5740802%" y2="209.072899%" id="linearGradient-2">
+            <stop stop-color="#FF9A00" offset="0%"></stop>
+            <stop stop-color="#FF6800" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Login-/-registration-add-photos" transform="translate(-282.000000, -379.000000)">
+            <g id="Group-4" transform="translate(282.000000, 379.000000)">
+                <g id="Group-5">
+                    <path d="M12.5,39.1214764 L12.5,41 C12.5,42.1045695 11.6045695,43 10.5,43 L7,43 C5.8954305,43 5,42.1045695 5,41 L5,37.9986458 C3.48339883,36.909752 2.49552409,35.1309795 2.49552409,33.1214764 L2.49552409,22.0229551 C2.49552409,21.3549319 2.69602813,20.7022859 3.07108561,20.1494868 C1.08662923,19.1847432 0.0629340278,17.7743037 0,15.9181683 C0.199652778,15.8974414 2.09247832,16.0713567 5.67847661,16.4399143 C6.68855641,11.7135028 8.95893888,8.46238108 12.489624,6.68654926 C13.8923475,6.32254967 18.0858019,6.18960806 25.069987,6.28772442 L25.069987,6.32032644 C32.0078941,6.32349262 36.0787356,6.4455669 37.2825114,6.68654926 C40.8131965,8.46238108 43.083579,11.7135028 44.0936588,16.4399143 C47.6796571,16.0713567 49.5724826,15.8974414 49.7721354,15.9181683 C49.7092014,17.7743037 48.6855062,19.1847432 46.7010498,20.1494868 C47.0761073,20.7022859 47.2766113,21.3549319 47.2766113,22.0229551 L47.2766113,33.1214764 C47.2766113,35.0284897 46.3869351,36.727708 45,37.8267139 L45,41 C45,42.1045695 44.1045695,43 43,43 L39.5,43 C38.3954305,43 37.5,42.1045695 37.5,41 L37.5,39.1214764 L25.069987,39.1214764 L12.5,39.1214764 Z" id="Combined-Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                    <path d="M31.4627932,4.83518499 C30.7091808,2.17495412 27.9539571,0.202491173 24.6704102,0.202491173 C21.4738039,0.202491173 18.7779136,2.07188455 17.9420712,4.62534532 C17.7675818,5.15840256 31.595997,5.30539048 31.4627932,4.83518499 Z" id="Oval-2" fill="url(#linearGradient-2)"></path>
+                </g>
+                <path d="M16,10 L34,10 C37.3137085,10 40,12.6862915 40,16 L10,16 L10,16 C10,12.6862915 12.6862915,10 16,10 Z" id="Rectangle-9" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <path d="M23,25 L28,25 C31.8659932,25 35,28.1340068 35,32 L16,32 L16,32 C16,28.1340068 19.1340068,25 23,25 Z" id="Rectangle-9-Copy" fill="#D9E7F8" fill-rule="nonzero" transform="translate(25.500000, 28.500000) scale(-1, -1) translate(-25.500000, -28.500000) "></path>
+                <circle id="Oval-3" fill="#FFFFFF" fill-rule="nonzero" cx="9.5" cy="28.5" r="2.5"></circle>
+                <circle id="Oval-3-Copy" fill="#FFFFFF" fill-rule="nonzero" cx="39.5" cy="28.5" r="2.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

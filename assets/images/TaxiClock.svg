@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="57px" viewBox="0 0 74 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#86BAED" offset="0%"></stop>
+            <stop stop-color="#4E84D7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-3.81050431%" y1="29.2769108%" x2="173.269558%" y2="17.7762295%" id="linearGradient-2">
+            <stop stop-color="#FE9600" offset="0%"></stop>
+            <stop stop-color="#FBAE72" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-3" cx="14.5" cy="14.5" r="14.5"></circle>
+        <filter x="-13.8%" y="-13.8%" width="127.6%" height="127.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.133831522 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main-screen-–-ride-chosen" transform="translate(-152.000000, -115.000000)" fill-rule="nonzero">
+            <g id="pop-up" transform="translate(21.000000, 90.000000)">
+                <g id="Group-4" transform="translate(131.000000, 27.000000)">
+                    <path d="M15,50.3096924 L15,53 C15,54.1045695 14.1045695,55 13,55 L8,55 C6.8954305,55 6,54.1045695 6,53 L6,49.5101025 C4.20363431,48.4734409 2.99462891,46.5327558 2.99462891,44.3096924 L2.99462891,29.6294127 C2.99462891,28.8232984 3.23510753,28.03551 3.68530273,27.3668213 C1.30395508,26.2001546 0.0755208333,24.4945068 0,22.2498779 C0.239583333,22.2248128 2.51097398,22.4351291 6.81417194,22.8808266 C8.02626769,17.1651661 10.7507267,13.2335771 14.9875488,11.0860596 C16.6708171,10.645874 21.7029622,10.4851074 30.0839844,10.6037598 L30.0839844,10.6431855 C38.409473,10.6470143 43.2944827,10.794639 44.7390137,11.0860596 C48.9758358,13.2335771 51.7002948,17.1651661 52.9123906,22.8808266 C57.2155885,22.4351291 59.4869792,22.2248128 59.7265625,22.2498779 C59.6510417,24.4945068 58.4226074,26.2001546 56.0412598,27.3668213 C56.491455,28.03551 56.7319336,28.8232984 56.7319336,29.6294127 L56.7319336,44.3096924 C56.7319336,46.4179871 55.644539,48.2723073 54,49.3424024 L54,53 C54,54.1045695 53.1045695,55 52,55 L47,55 C45.8954305,55 45,54.1045695 45,53 L45,50.3096924 L30.0839844,50.3096924 L15,50.3096924 Z M37.7553519,8.84720045 C37.9151964,9.41582105 21.3210981,9.23806822 21.5304854,8.59344085 C22.5334964,5.50553481 25.7685647,3.24487305 29.6044922,3.24487305 C33.5447485,3.24487305 36.851017,5.63017707 37.7553519,8.84720045 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                    <path d="M21,14 L39,14 C43.418278,14 47,17.581722 47,22 L47,23 L13,23 L13,22 C13,17.581722 16.581722,14 21,14 Z" id="Rectangle-9" fill="#FFFFFF" opacity="0.733649554"></path>
+                    <path d="M27,33 L34,33 C38.418278,33 42,36.581722 42,41 L42,42 L19,42 L19,41 C19,36.581722 22.581722,33 27,33 Z" id="Rectangle-9-Copy" fill="#D9E7F8" transform="translate(30.500000, 37.500000) scale(-1, -1) translate(-30.500000, -37.500000) "></path>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="11" cy="37" r="3"></circle>
+                    <circle id="Oval-3-Copy" fill="#FFFFFF" cx="48" cy="37" r="3"></circle>
+                    <g id="Group-3" transform="translate(43.000000, 0.000000)">
+                        <g id="Oval">
+                            <use fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <circle stroke="#FFFFFF" stroke-width="2" cx="14.5" cy="14.5" r="15.5"></circle>
+                        </g>
+                        <polyline id="Path-2" stroke="#FFFFFF" stroke-width="2" points="14 5 14 17 21 17"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

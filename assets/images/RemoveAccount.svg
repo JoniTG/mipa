@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="71px" viewBox="0 0 67 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#86BAED" offset="0%"></stop>
+            <stop stop-color="#4E84D7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FF9A00" offset="0%"></stop>
+            <stop stop-color="#FF6800" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-3" cx="14.5" cy="14.5" r="14.5"></circle>
+        <filter x="-13.8%" y="-13.8%" width="127.6%" height="127.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.133831522 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Account-Cancellation-approval-" transform="translate(-157.000000, -150.000000)" fill-rule="nonzero">
+            <g id="pop-up" transform="translate(21.000000, 95.000000)">
+                <g id="Group-2" transform="translate(136.000000, 57.000000)">
+                    <path d="M19.1006719,34.5454368 C14.3165693,32.3322892 11,27.5106742 11,21.9189191 C11,14.2317123 17.2680135,8 25,8 C32.7319865,8 39,14.2317123 39,21.9189191 C39,27.5106742 35.6834307,32.3322892 30.8993281,34.5454368 C41.8594807,37.1814804 50,46.9979028 50,58.7046338 C50,72.4317887 0,72.4317887 0,58.7046338 C0,46.9979028 8.14051931,37.1814804 19.1006719,34.5454368 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                    <g id="Group-3" transform="translate(36.000000, 0.000000)">
+                        <g id="Oval">
+                            <use fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <circle stroke="#FFFFFF" stroke-width="2" cx="14.5" cy="14.5" r="15.5"></circle>
+                        </g>
+                        <path d="M16.7019521,7.40520872 L11.3822552,22.5397024" id="Path-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(14.042104, 14.972456) scale(-1, 1) rotate(-66.000000) translate(-14.042104, -14.972456) "></path>
+                        <path d="M16.7019521,7.40520872 L11.3822552,22.5397024" id="Path-2-Copy" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(14.042104, 14.972456) rotate(-66.000000) translate(-14.042104, -14.972456) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

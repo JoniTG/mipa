@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Polygon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="170.78584%" id="linearGradient-1">
+            <stop stop-color="#FF9A00" offset="0%"></stop>
+            <stop stop-color="#FF6800" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main-screen" transform="translate(-218.000000, -298.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="ride-01" transform="translate(20.000000, 263.000000)">
+                <g id="drive-info" transform="translate(11.000000, 17.000000)">
+                    <path d="M195.529887,19.7425617 L201.06995,29.3382332 C201.622235,30.2948184 201.294484,31.5179993 200.337899,32.070284 C200.033861,32.2458207 199.688973,32.3382332 199.337899,32.3382332 L188.257772,32.3382332 C187.153203,32.3382332 186.257772,31.4428027 186.257772,30.3382332 C186.257772,29.9871599 186.350185,29.6422716 186.525721,29.3382332 L192.065785,19.7425617 C192.61807,18.7859765 193.84125,18.4582262 194.797836,19.0105109 C195.101874,19.1860476 195.35435,19.4385233 195.529887,19.7425617 Z" id="Polygon" transform="translate(193.798003, 25.540230) rotate(-90.000000) translate(-193.798003, -25.540230) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

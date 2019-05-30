@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="17px" viewBox="0 0 11 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 6 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF9A00" offset="0%"></stop>
+            <stop stop-color="#FF6800" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="setting" transform="translate(-37.000000, -174.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group-3" transform="translate(20.000000, 150.000000)">
+                <polygon id="Path-6-Copy" transform="translate(22.500000, 32.389087) rotate(-270.000000) translate(-22.500000, -32.389087) " points="29.2704628 27.3160589 30.7295372 28.6839411 22.5 37.4621141 14.2704628 28.6839411 15.7295372 27.3160589 22.5 34.5378859"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

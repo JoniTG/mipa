@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="25px" viewBox="0 0 36 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main-screen" transform="translate(-318.000000, -24.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Nav-Bar">
+                <path d="M319.5,24 L352.5,24 C353.328427,24 354,24.6715729 354,25.5 C354,26.3284271 353.328427,27 352.5,27 L319.5,27 C318.671573,27 318,26.3284271 318,25.5 C318,24.6715729 318.671573,24 319.5,24 Z M319.5,35 L344.5,35 C345.328427,35 346,35.6715729 346,36.5 C346,37.3284271 345.328427,38 344.5,38 L319.5,38 C318.671573,38 318,37.3284271 318,36.5 C318,35.6715729 318.671573,35 319.5,35 Z M319.5,46 L336.5,46 C337.328427,46 338,46.6715729 338,47.5 C338,48.3284271 337.328427,49 336.5,49 L319.5,49 C318.671573,49 318,48.3284271 318,47.5 C318,46.6715729 318.671573,46 319.5,46 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

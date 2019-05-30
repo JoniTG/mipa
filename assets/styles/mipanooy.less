@@ -1,0 +1,994 @@
+// font
+
+@font-face {
+  font-family: 'Open Sans Hebrew';
+  font-style: italic;
+  font-weight: 300;
+  src: url(../fonts/OpenSansHebrew-LightItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Hebrew';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/OpenSansHebrew-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Hebrew';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/OpenSansHebrew-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Hebrew';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/OpenSansHebrew-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Hebrew';
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/OpenSansHebrew-BoldItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Hebrew';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/OpenSansHebrew-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Hebrew';
+  font-style: italic;
+  font-weight: 800;
+  src: url(../fonts/OpenSansHebrew-ExtraBoldItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Hebrew';
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/OpenSansHebrew-ExtraBold.ttf) format('truetype');
+}
+
+// variables & mixins
+
+@brand_color: #f8cb00;
+@brand_orange: #fd9b18;
+@brand_blue: #598ddd;
+
+@global_gray: #a4a4a4;
+@global_lightgray: #d6d6d6;
+@global_darkgray: #616161;
+@global_blue: #f7faff;
+@global_red: #ff3535;
+@global_orange: #ff6d00;
+
+@global_font: 'Open Sans Hebrew', sans-serif;
+@global_boxshadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+.brand_gradient_vert() {
+  background: #ff9a00;
+  background: -moz-linear-gradient(top, #ff9a00 0%, #ff6800 100%);
+  background: -webkit-linear-gradient(top, #ff9a00 0%,#ff6800 100%);
+  background: linear-gradient(to bottom, #ff9a00 0%,#ff6800 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9a00', endColorstr='#ff6800',GradientType=0 );
+}
+.brand_gradient_horiz() {
+  background: #ff9a00;
+  background: -moz-linear-gradient(left, #ff9a00 0%, #ff6800 100%);
+  background: -webkit-linear-gradient(left, #ff9a00 0%,#ff6800 100%);
+  background: linear-gradient(to right, #ff9a00 0%,#ff6800 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9a00', endColorstr='#ff6800',GradientType=1 );
+}
+.brand_gradient_blue() {
+  background: #3b75ce;
+  background: -moz-linear-gradient(45deg, #3b75ce 0%, #598ddd 100%);
+  background: -webkit-linear-gradient(45deg, #3b75ce 0%,#598ddd 100%);
+  background: linear-gradient(45deg, #3b75ce 0%,#598ddd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b75ce', endColorstr='#598ddd',GradientType=1 );
+}
+
+// actual style beginning
+
+body {
+  margin: 0;
+  font-family: @global_font;
+  color: #484848;
+  letter-spacing: 1;
+  line-height: 1.4;
+
+  background-color: @global_blue;
+  &.splash { background-color: @brand_orange; }
+}
+
+.splash_container { // Splash page
+  width: 100%;
+  height: 100%;
+  .brand_gradient_vert();
+
+  text-align: center;
+  h1, h2 {
+    font-weight: 300;
+    padding: 0; margin: 0;
+    letter-spacing: 1.55;
+  }
+  h1.splash_header {
+    font-size: 36px;
+    padding-top: 14vh;
+  }
+  h2.splash_brand {
+    font-size: 34px;
+    padding-top: 24px;
+  }
+  .splash_glyph {
+    background-image: url('../images/Taxi.svg');
+    width: 148px;
+    height: 129px;
+    margin: auto;
+    margin-top: 12vh;
+    position: relative; right: 10px; // centering the car
+  }
+  .splash_road {
+    background: url('../images/SplashRoad.svg') no-repeat center bottom fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute; bottom: 0;
+  }
+}
+
+.sticky_bar {
+  position: relative;
+  
+  width: 100%;
+  color: #fff;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .brand_gradient_blue();
+  
+  &.login_prompt {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 32px 20px;
+  }
+  
+  &.toolbar_prompt {
+    padding: 15px 20px;
+    height: 72px;
+    
+    position: fixed; z-index: 2;
+    
+    & + main.container { // shifting content down to not be hidden by the bar
+      padding: 104px 20px; // 32 + 72
+    }
+    
+    &.toolbar_expanded { // expanded menu
+      display: block;
+      overflow-y: scroll;
+      height: 100%;
+      
+      .page_subject {
+        padding-top: 2px;
+        font-weight: normal;
+      }
+    }
+    
+  }
+  
+  &.header_prompt {
+    text-align: center;
+    padding: 32px 20px;
+    h1.sticky_header {
+      width: 100%;
+      padding: 0; margin: 0;
+      font-weight: normal;
+      font-size: 24px;
+    }
+  }
+  
+  h1.page_subject {
+    margin: 0 auto; padding: 0;
+    text-align: center;
+    font-weight: bold; font-size: 24px;
+  }
+  
+  .button.small_button {
+    margin-right: auto; margin-left: 0;
+  }
+  
+} /* /.sticky_bar */
+
+.container {
+  padding: 32px 20px;
+  box-sizing: border-box;
+  header.form_head {
+    display: flex;
+    align-items: center;
+    h1.form_header {
+      padding: 0; margin: 0;
+      margin-left: 20px;
+      font-weight: normal;
+      font-size: 24px;
+      display: inline;
+    }
+    h2.form_subheader {
+      padding: 0; margin: 0;
+      color: @global_gray;
+      font-size: 14px;
+      display: inline;
+    }
+  }
+
+  header.section_head {
+    text-align: center;
+    h1.form_header {
+      padding: 0; margin: 0;
+      font-weight: normal;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    h2.form_subheader {
+      padding: 0; margin: 0;
+      color: @global_darkgray;
+      font-size: 14px;
+    }
+  }
+
+  .radio_group_container {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 -4px;
+    margin-top: 32px;
+    .radio_group {
+      width: 100%;
+      padding: 0 4px;
+      .radio {
+        display: none;
+      }
+      .radio + label {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        border: 2px solid @global_lightgray;
+        border-radius: 3px;
+
+        padding: 7px 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: @global_darkgray;
+
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .radio + label:active, .radio:checked + label:active {
+        color: @brand_blue;
+      }
+      .radio:checked + label {
+        border-color: @brand_blue;
+        color: @brand_blue;
+      }
+    }
+  }
+
+  .label {
+    font-weight: bold;
+    font-size: 16px;
+    display: inline;
+    line-height: 28px;
+    .label_note {
+      font-size: 14px;
+      color: @global_gray;
+    }
+  }
+  
+  .input_group {
+    margin-top: 35px;
+    .input {
+      -webkit-appearance: none;
+      
+      background-color: #fff;
+      border: none; border-radius: 5px;
+      box-shadow: @global_boxshadow;
+      padding: 20px 12px;
+      letter-spacing: 0.7;
+
+      font-family: @global_font;
+      font-weight: bold;
+      font-size: 14px;
+
+      width: 100%;
+      margin-top: 12px;
+    }
+    textarea.input {
+      min-height: 170px;
+    }
+    
+    // checkbox
+    
+    &.checkbox_group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .checkbox {
+      display: none;
+    }
+    
+    .checkbox + label {
+      display: block;
+      position: relative;
+      width: 33px; height: 33px;
+      background-color: #fff;
+      border: 2px solid @brand_blue;
+
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin-right: 50px;
+    }
+    
+    .checkbox + label:active, .checkbox:checked + label:active {
+      box-shadow: @global_boxshadow;
+    }
+    
+    .checkbox:checked + label { box-shadow: @global_boxshadow; }
+    .checkbox:checked + label:after {
+      content: '';
+      background-image: url('../images/Tick.svg');
+      width: 22px; height: 21px;
+      position: absolute;
+      top: 4px; left: 5px;
+    }
+    
+    // select
+    
+    .select_container {
+      position: relative;
+      display: inline-block;
+      margin-top: 12px; margin-left: 15px;
+      select.select {
+        display: inline-block;
+        -webkit-appearance: none; 
+        -moz-appearance: none;
+        appearance: none;
+
+        background-color: #fff;
+        border: none; border-radius: 5px;
+        box-shadow: @global_boxshadow;
+        padding: 20px 12px 20px 70px;
+        letter-spacing: 0.7;
+
+        font-family: @global_font;
+        font-weight: bold;
+        font-size: 14px;
+        &.large_select { font-size: 16px; }
+      }
+      &:after {
+        content: '';
+        display: block; position: absolute;
+        left: 12px; top: 50%; transform: translateY(-50%);
+        
+        background-image: url('../images/BlackChevron.svg');
+        width: 17px; height: 11px;
+      }
+      
+      &.wide_select { width: 100%; .select { width: 100%; } }
+      
+    }
+    
+    // etc.
+    
+    &.input_error {
+      .input {
+        box-shadow: inset 0 0 0 2px @global_red, @global_boxshadow;
+      }
+      .label:after {
+        content: '*בוצעה שגיאה';
+        display: inline-block;
+        font-size: 14px;
+        color: @global_red;
+        font-weight: bold;
+        padding-right: 7px;
+      }
+    }
+
+    &.card_thumbnails {
+      margin-top: 0;
+      img.card_thumbnail {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px; margin-top: 12px;
+        width: 75px;
+      }
+    }
+    
+  } /* /.input_group */
+
+  .center_prompt {
+    display: block;
+    padding: 50px 0 35px 0;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+} /* /.container */
+
+.blue_container { // for LoginRegisterAddPhotos & PhotosAdded
+  width: 100%; height: 100%;
+  color: #fff;
+  
+  .brand_gradient_blue();
+  
+  .select_group {
+    //////////////
+    // For the block part use flexbox, set widths for plus and glyph 65px both
+    //////////////
+    margin-bottom: 30px;
+    h1.header {
+      padding: 0; margin: 0;
+      margin-left: 20px;
+      font-weight: normal;
+      font-size: 24px;
+      display: inline;
+    }
+
+    .block {
+      padding: 17px;
+      display: flex;
+      align-items: center;
+      
+      .block_driverslicense {
+        background-image: url('../images/DriversLicenseGlyph.svg');
+        width: 60px; height: 36px;
+        flex-shrink: 0; flex-grow: 0;
+        margin-left: 20px;
+      }
+      
+      .block_cab {
+        background: url('../images/CabGlyph.svg') center center no-repeat;
+        width: 60px; height: 43px;
+        flex-shrink: 0; flex-grow: 0;
+        margin-left: 20px;
+      }
+      
+      .block_driverslicense {
+        background-image: url('../images/DriversLicenseGlyph.svg');
+        width: 60px; height: 36px;
+        flex-shrink: 0; flex-grow: 0;
+        margin-left: 20px;
+      }
+      
+      .block_caption {
+        font-weight: bold;
+        color: @global_darkgray;
+        font-size: 16px;
+        width: 100%;
+      }
+      
+      .block_photo {
+        position: relative;
+
+        height: 44px;
+        flex-shrink: 0; flex-grow: 0;
+        text-align: left;
+        margin-right: 10px;
+        button.block_addphoto {
+          background: url('../images/AddButton.svg');
+          width: 44px; height: 44px;
+
+          box-shadow: none; border: none;
+        }
+        
+        .block_image {
+          display: inline-block;
+          border-radius: 3px;
+          box-shadow: @global_boxshadow;
+          height: 100%; max-height: 100px; max-width: 100px;
+        }
+        
+        button.block_removephoto {
+          background: url('../images/AddButton.svg');
+          transform: rotate(45deg);
+          background-size: 19px 19px;
+          width: 19px; height: 19px;
+
+          box-shadow: none; border: none;
+          position: absolute;
+          top: -9px; right: -9px;
+        }
+      }
+      
+    } /* /.block */
+    
+  } /* /.select_group */
+  
+  .small_prompt {
+    display: block;
+    font-size: 14px;
+    position: absolute;
+    padding: 25px 0;
+    font-weight: bold;
+  }
+  
+  .button.addphotos_button {
+    margin-top: 70px;
+  }
+  
+} /* /.blue_container */
+
+.block {
+  background-color: #fff;
+  box-shadow: @global_boxshadow;
+  border-radius: 5px;
+  padding: 25px 15px;
+  width: 100%; box-sizing: border-box;
+  margin-top: 20px;
+  
+  &.wide_block {
+    box-shadow: none; border-radius: 0;
+    width: ~"calc(100% + 40px)";
+    margin-right: -20px;
+    padding: 25px 35px; //15px + 20px;
+    margin-top: 30px; margin-bottom: 35px;
+    &.ride_block { padding: 15px 35px 23px; }
+  }
+  
+  &.ride_block {
+    padding: 15px;
+    .button { margin-top: 25px; }
+    .clock_glyph { // for the button
+      background-image: url('../images/WaitingClock.svg');
+      width: 20px; height: 20px;
+      margin-right: 5px;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative; top: -1px;
+    }
+    
+    .block_subject_header {
+      width: ~"calc(100% + 30px)";
+      margin: -15px -15px 5px 0;
+      padding: 10px 0;
+      font-size: 18px; font-weight: bold; color: #fff;
+      text-align: center;
+      
+      border-radius: 5px 5px 0 0;
+      &.block_sh_purple { background-color: #4F59C0; }
+      &.block_sh_orange { background-color: @global_orange; }
+    }
+  }
+  
+  &.driver_block {
+    position: relative;
+    padding: 15px 15px 25px;
+    
+    h2.driver_block_name {
+      margin: 0 0 25px; padding: 0;
+      font-size: 22px;
+    }
+    
+    .ride_details .ride_details_text {
+      margin: 15px 0 0;
+    }
+    
+    .floating_button {
+      position: absolute; left: 15px; top: 70px;
+      padding-right: 35px; padding-left: 35px;
+    }
+    
+    .driver_checkmark_complete {
+      background-image: url('../images/CheckmarkCircle.svg');
+      width: 52px; height: 52px;
+      position: absolute; left: 15px; top: 30px;
+    }
+    
+    .label {
+      display: block;
+      margin: 20px 0;
+    }
+    
+    &.cancel_block {
+      h2.driver_block_name {
+        margin: 0 0 10px;
+        &:last-of-type { margin-bottom: 0; }
+      }
+      .label {
+        margin-top: 0;
+      }
+    }
+  }
+  
+  &.setting_block {
+    position: relative;
+    padding: 19px;
+    .ride_attr { margin: 0; }
+    .ride_attr .ride_attr_caption {
+      font-size: 16px;
+    }
+    
+    &:after {
+      content: ''; display: block;
+      background-image: url('../images/ThinChevron.svg');
+      width: 11px; height: 17px;
+      position: absolute;
+      left: 19px; top: 23px;
+    }
+  }
+  
+  .ride_attr {
+
+    width: 100%;
+    margin-top: 10px;
+
+    .ride_attr_caption {
+      font-size: 22px;
+      font-weight: bold;
+      color: @global_darkgray;
+      .ride_attr_arrow {
+        display: inline-block;
+        background-image: url('../images/RideTo.svg');
+        width: 14px; height: 16px;
+        margin: 0 7px 0 5px;
+        position: relative; top: 1px;
+      }
+      .button { margin: 0; }
+      &.small_caption { font-size: 16px; }
+    }
+
+    .ride_taxi_glyph, .ride_clock_glyph, .ride_passanger_glyph, .ride_cost_glyph, .ride_star_glyph, .ride_star_yellow_glyph, .ride_phone_glyph, .ride_camera_glyph, .ride_card_glyph, .ride_cancel_glyph, .ride_contact_glyph {
+      width: 19px;
+      display: inline-block;
+      margin-left: 10px;
+      overflow: visible;
+    }
+    .ride_taxi_glyph {
+      background: url('../images/RideTaxi.png') center center no-repeat;
+      height: 18px;
+      background-size: 19px 18px;
+      position: relative; top: 2px;
+    }
+    .ride_clock_glyph {
+      background: url('../images/RideClock.png') center center no-repeat;
+      height: 18px;
+      background-size: 18px 18px;
+      position: relative; top: 1px;
+    }
+    .ride_passanger_glyph {
+      background: url('../images/RidePassanger.png') center center no-repeat;
+      height: 24px;
+      background-size: 16px 24px;
+      position: relative; top: 5px;
+    }
+    .ride_cost_glyph {
+      background: url('../images/RideCost.png') center center no-repeat;
+      height: 11px;
+      background-size: 16px 11px;
+      position: relative; top: -2px;
+    }
+    .ride_star_glyph {
+      background: url('../images/HQStar.svg') center center no-repeat;
+      width: 23px; height: 24px;
+      background-size: 24px 23px;
+      vertical-align: middle;
+      position: relative; top: -3px;
+      
+      margin-left: 7px; // intended
+    }
+    .ride_star_yellow_glyph {
+      background: url('../images/HQStarYellow.svg') center center no-repeat;
+      width: 23px; height: 24px;
+      background-size: 24px 23px;
+      vertical-align: middle;
+      position: relative; top: -3px;
+      
+      margin-left: 7px; // intended
+    }
+    .ride_phone_glyph {
+      background: url('../images/RidePhone.png') center center no-repeat;
+      width: 22px; height: 22px;
+      background-size: 22px 22px;
+      vertical-align: middle;
+      position: relative; top: -4px;
+      
+      margin-left: 7px;
+    }
+    
+    .ride_camera_glyph, .ride_card_glyph, .ride_cancel_glyph, .ride_contact_glyph {
+      width: 25px; margin-left: 4px; // settings icons
+    }
+    .ride_camera_glyph {
+      background: url('../images/RideCamera.png') center center no-repeat;
+      height: 15px;
+      background-size: 21px 15px;
+      vertical-align: middle;
+      position: relative; top: -2px;
+    }
+    .ride_card_glyph {
+      background: url('../images/RideCard.png') center center no-repeat;
+      height: 15px;
+      background-size: 25px 15px;
+      vertical-align: middle;
+      position: relative; top: -1px;
+    }
+    .ride_cancel_glyph {
+      background: url('../images/RideCancel.png') center center no-repeat;
+      height: 22px;
+      background-size: 22px 22px;
+      vertical-align: middle;
+      position: relative; top: -2px;
+    }
+    .ride_contact_glyph {
+      background: url('../images/RideContact.png') center center no-repeat;
+      height: 15px;
+      background-size: 23px 15px;
+      vertical-align: middle;
+      position: relative; top: -1px;
+    }
+    
+    &.attr_phone {
+      .ride_attr_caption, a.ride_attr_caption, .ride_attr_caption a { // smartphones create links out of numbers
+        font-size: 22px;
+        color: @global_orange !important;
+        text-decoration: none;
+        .gray_caption { color: @global_darkgray; }
+      }
+    }
+  } /* /.ride_attr */
+  
+  .ride_details {
+    margin-top: 14px;
+    .ride_chevron_glyph {
+      background-image: url('../images/Chevron.svg');
+      width: 19px; height: 13px;
+      display: inline-block;
+      margin-left: 10px;
+      position: relative; top: 2px;
+    }
+    .ride_details_caption {
+      font-size: 15px;
+      font-weight: bold;
+      color: @global_orange;
+    }
+    p.ride_details_text, .ride_details_text {
+      padding: 0; margin: 10px 34px 10px 0;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 26px;
+      color: @global_darkgray;
+      img {
+        border-radius: 3px;
+        box-shadow: @global_boxshadow;
+        max-width: 50%;
+      }
+    }
+    &.details_collapsed {
+      .ride_chevron_glyph { transform: rotate(180deg); }
+    }
+  }
+  
+} /* /.block */
+
+.menu_glyph {
+  background: url('../images/Menu.svg');
+  width: 36px; height: 25px;
+  &.exit_menu {
+    background: url('../images/Exit.svg');
+    width: 28px; height: 27px; top: 22px;
+  }
+  box-shadow: none; border: none;
+  margin: 0; padding: 0;
+  
+  position: absolute; right: 20px; top: 23px;
+}
+.back_glyph {
+  background: url('../images/BackChevron.svg');
+  width: 12px; height: 18px;
+
+  box-shadow: none; border: none;
+  margin: 0; padding: 0;
+  
+  position: absolute; left: 20px;
+  top: 50%; transform: translateY(-50%);
+}
+
+
+
+button.button {
+  &:not(.inverted_button) { .brand_gradient_horiz(); }
+  border: none; border-radius: 5px;
+  box-shadow: @global_boxshadow;
+  padding: 15px 55px;
+  letter-spacing: 0.7;
+
+  font-family: @global_font;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+
+  &.wide_button {
+    width: 100%;
+  }
+  &.small_button {
+    padding: 8px 30px 10px;
+  }
+  &.inverted_button {
+    background: none;
+    color: @brand_orange;
+    box-shadow: none;
+  }
+  &[disabled], &:disabled, &.disabled { // if button is disabled or uses 'disabled' class
+    box-shadow: none;
+    background: @global_lightgray;
+  }
+  &.dark { // if button is disabled or uses 'disabled' class
+    box-shadow: none;
+    background: @global_gray;
+  }
+  &.space_above_button {
+    margin-top: 47px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 3;
+}
+
+.popup_container {
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  //top: 50%; transform: translateY(-50%);
+  .popup {
+    text-align: center;
+    margin: auto; margin-top: 50px;
+    .popup_caption {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      color: @global_darkgray;
+      padding: 15px 0;
+    }
+    
+    .popup_header {
+      display: block;
+      
+      color: @global_darkgray;
+      font-size: 20px; font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .button {
+      margin-top: 10px;
+    }
+    
+    .taxi_wait_glyph {
+      background-image: url('../images/TaxiClock.svg');
+      width: 74px; height: 57px;
+      margin: auto; margin-bottom: 10px;
+    }
+    .card_accepted_glyph {
+      background-image: url('../images/CardCheck.svg');
+      width: 91px; height: 56px;
+      margin: auto; margin-bottom: 24px;
+      position: relative; right: -5px; // centering the card itself
+    }
+    .remove_account_glyph {
+      background-image: url('../images/RemoveAccount.svg');
+      width: 67px; height: 71px;
+      margin: auto; margin-bottom: 24px;
+      position: relative; right: -7px; // centering the user icon itself
+    }
+    .like_glyph {
+      background-image: url('../images/LikeGlyph.svg');
+      width: 78px; height: 81px;
+      margin: auto; margin-bottom: 10px;
+    }
+    
+    .popup_attr_container {
+      padding-bottom: 10px;
+      .attr_caption {
+        display: block;
+        font-size: 19px;
+        font-weight: bold;
+        color: @global_darkgray;
+        margin-bottom: 15px;
+        .attr_arrow {
+          display: inline-block;
+          background-image: url('../images/RideTo.svg');
+          width: 14px; height: 16px;
+          margin: 0 4px 0 2px;
+          position: relative; top: 1px;
+        }
+        &.large_attr_caption { font-size: 22px; }
+      }
+    }
+    
+    .confirm_payment_container {
+      margin: 50px 0;
+    }
+    .confirm_cancel_container {
+      margin: 50px 0 15px;
+    }
+    
+    .rating_group_container {
+      direction: ltr;
+      display: flex;
+      justify-content: space-between;
+      width: 75%; margin: auto;
+      margin-bottom: 30px;
+      .star_glyph {
+        background: url('../images/HQStar.svg');
+        &.yellow_star { background: url('../images/HQStarYellow.svg'); }
+        width: 39px; height: 37px;
+
+        box-shadow: none; border: none;
+        margin: 0; padding: 0;
+      }
+    }
+    .rating_count {
+      display: block;
+      font-weight: bold; font-size: 16px;
+      color: @global_gray;
+      margin-bottom: 20px;
+    }
+    
+  } /* /.popup */
+  
+} /* /.popup_container */
+
+button.text_button {
+  background: transparent;
+  box-shadow: none; border: none;
+  padding: 0; margin: 0; text-align: right;
+  letter-spacing: 1;
+  font-family: @global_font;
+  
+  font-size: 16px; font-weight: bold;
+  color: @global_orange;
+}
+
+.navbar {
+  width: 100%;
+  margin-top: 30px;
+  ul {
+    margin: 0; padding: 0;
+    list-style: none;
+    li {
+      position: relative;
+      font-size: 26px; color: #fff;
+      font-weight: bold;
+      padding: 23px 15px;
+      &:not(:last-of-type) { border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
+      
+      &:after {
+        content: '';
+        background: url('../images/ThinChevronWhite.svg');
+        width: 11px; height: 17px;
+
+        box-shadow: none; border: none;
+        margin: 0; padding: 0;
+
+        position: absolute; left: 0;
+        top: 50%; transform: translateY(-50%);
+      } /* /li:after */
+      
+    } /* /li */
+    
+  } /* /ul */
+  
+} /* /.navbar */
+
+// For everyone with a screen res. narrower than 365px so content won't get squished
+@media screen and (max-width: 365px) {
+  @viewport {
+    width: 365px;
+  }
+}
